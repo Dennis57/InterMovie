@@ -1,6 +1,6 @@
 package com.dennis.intermovie.domain.model
 
-data class PopularMoviesResults (
+data class PopularMoviesItem (
     val title: String?,
     val overview: String?,
     val posterPath: String?,

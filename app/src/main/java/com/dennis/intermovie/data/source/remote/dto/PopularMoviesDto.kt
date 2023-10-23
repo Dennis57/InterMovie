@@ -11,7 +11,7 @@ data class PopularMoviesDto(
     val page: Int,
 
     @Json(name = "results")
-    val results: List<PopularMoviesResultsDto>,
+    val results: List<PopularMoviesItemDto>,
 
     @Json(name = "total_pages")
     val totalPages: Int,

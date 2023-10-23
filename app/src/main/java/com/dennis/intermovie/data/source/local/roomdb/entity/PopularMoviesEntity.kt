@@ -3,7 +3,6 @@ package com.dennis.intermovie.data.source.local.roomdb.entity
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.dennis.intermovie.domain.model.PopularMovies
-import com.dennis.intermovie.domain.model.PopularMoviesResults
 
 @Entity(tableName = PopularMoviesEntity.TABLE_NAME)
 data class PopularMoviesEntity(
@@ -12,7 +11,7 @@ data class PopularMoviesEntity(
 
     val page: Int?,
 
-    val results: List<PopularMoviesResultsEntity>?
+    val results: List<PopularMoviesItemEntity>?
 ) {
 
     fun toPopularMovies() : PopularMovies {

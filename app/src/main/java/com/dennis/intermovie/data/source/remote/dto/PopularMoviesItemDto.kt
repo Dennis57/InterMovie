@@ -1,11 +1,11 @@
 package com.dennis.intermovie.data.source.remote.dto
 
-import com.dennis.intermovie.data.source.local.roomdb.entity.PopularMoviesResultsEntity
+import com.dennis.intermovie.data.source.local.roomdb.entity.PopularMoviesItemEntity
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class PopularMoviesResultsDto(
+data class PopularMoviesItemDto(
 
     @Json(name = "adult")
     val adult: Boolean,
@@ -49,8 +49,8 @@ data class PopularMoviesResultsDto(
     @Json(name = "vote_count")
     val voteCount: Int,
 ) {
-    fun toPopularMoviesResultsEntity() : PopularMoviesResultsEntity {
-        return PopularMoviesResultsEntity(
+    fun toPopularMoviesResultsEntity() : PopularMoviesItemEntity {
+        return PopularMoviesItemEntity(
             id = id,
             title = title,
             overview = overview,
