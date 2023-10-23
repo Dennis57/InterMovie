@@ -1,4 +1,4 @@
-package com.dennis.intermovie.data.source.local
+package com.dennis.intermovie.data.source.local.roomdb.entity
 
 data class PopularMoviesResultsEntity(
     val id: Int?,

@@ -1,6 +1,6 @@
-package com.dennis.intermovie.data.source.remote
+package com.dennis.intermovie.data.source.remote.dto
 
-import com.dennis.intermovie.data.source.local.PopularMoviesResultsEntity
+import com.dennis.intermovie.data.source.local.roomdb.entity.PopularMoviesResultsEntity
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
