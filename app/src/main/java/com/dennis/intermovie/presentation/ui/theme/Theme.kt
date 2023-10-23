@@ -1,4 +1,4 @@
-package com.dennis.intermovie.ui.theme
+package com.dennis.intermovie.presentation.ui.theme
 
 import android.app.Activity
 import android.os.Build

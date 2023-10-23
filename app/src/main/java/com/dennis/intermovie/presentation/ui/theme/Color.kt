@@ -1,4 +1,4 @@
-package com.dennis.intermovie.ui.theme
+package com.dennis.intermovie.presentation.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
