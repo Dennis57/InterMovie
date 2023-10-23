@@ -11,7 +11,7 @@ import com.dennis.intermovie.domain.model.PopularMoviesItem
 interface PopularMoviesItemDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertPopularMovieList(movies: List<PopularMoviesItemEntity>)
+    suspend fun insertPopularMovieItemList(movies: List<PopularMoviesItemEntity>)
 
     @Query("SELECT * FROM ${PopularMoviesItemEntity.TABLE_NAME}")
     suspend fun getPopularMovieList(): List<PopularMoviesItem>
