@@ -18,7 +18,7 @@ data class PopularMoviesEntity(
         return PopularMovies(
             page = page,
             results = results?.map {
-                it.toPopularMoviesResults()
+                it.toPopularMoviesItem()
             }
         )
     }

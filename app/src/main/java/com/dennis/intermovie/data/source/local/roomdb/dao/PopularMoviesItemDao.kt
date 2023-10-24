@@ -5,7 +5,6 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.dennis.intermovie.data.source.local.roomdb.entity.PopularMoviesItemEntity
-import com.dennis.intermovie.domain.model.PopularMoviesItem
 
 @Dao
 interface PopularMoviesItemDao {
@@ -14,7 +13,7 @@ interface PopularMoviesItemDao {
     suspend fun insertPopularMovieItemList(movies: List<PopularMoviesItemEntity>)
 
     @Query("SELECT * FROM ${PopularMoviesItemEntity.TABLE_NAME}")
-    suspend fun getPopularMovieList(): List<PopularMoviesItem>
+    suspend fun getPopularMovieList(): List<PopularMoviesItemEntity>
 
     @Query("DELETE FROM ${PopularMoviesItemEntity.TABLE_NAME}")
     suspend fun deleteAll()

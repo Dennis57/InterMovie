@@ -49,7 +49,7 @@ data class PopularMoviesItemDto(
     @Json(name = "vote_count")
     val voteCount: Int,
 ) {
-    fun toPopularMoviesResultsEntity() : PopularMoviesItemEntity {
+    fun toPopularMoviesItemEntity() : PopularMoviesItemEntity {
         return PopularMoviesItemEntity(
             id = id,
             title = title,

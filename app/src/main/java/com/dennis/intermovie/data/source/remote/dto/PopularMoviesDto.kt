@@ -23,7 +23,7 @@ data class PopularMoviesDto(
         return PopularMoviesEntity(
             page = page,
             results = results.map {
-                it.toPopularMoviesResultsEntity()
+                it.toPopularMoviesItemEntity()
             }
         )
     }

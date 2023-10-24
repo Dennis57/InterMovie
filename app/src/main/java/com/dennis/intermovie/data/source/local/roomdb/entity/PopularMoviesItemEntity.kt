@@ -21,7 +21,7 @@ data class PopularMoviesItemEntity(
     @ColumnInfo(name = "release_date")
     val releaseDate: String?
 ) {
-    fun toPopularMoviesResults(): PopularMoviesItem {
+    fun toPopularMoviesItem(): PopularMoviesItem {
         return PopularMoviesItem(
             title = title,
             overview = overview,
