@@ -12,7 +12,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import java.io.IOException
 
-class MovieRepositoryImpl constructor(
+class PopularMoviesItemRepositoryImpl constructor(
     private val interMovieApiService: InterMovieApiService,
     private val popularMoviesDao: PopularMoviesDao,
     private val popularMoviesItemDao: PopularMoviesItemDao
@@ -52,8 +52,7 @@ class MovieRepositoryImpl constructor(
     }
 
     private suspend fun getPopularMoviesFromDb(popularMoviesItemDao: PopularMoviesItemDao): List<PopularMoviesItem> {
-        val newPopularMovies = popularMoviesItemDao.getPopularMovieList().map { it.toPopularMoviesItem() }
-        return newPopularMovies
+        return popularMoviesItemDao.getPopularMovieList().map { it.toPopularMoviesItem() }
     }
 
 
