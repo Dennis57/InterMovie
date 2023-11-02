@@ -1,4 +1,4 @@
-package com.dennis.intermovie
+package com.dennis.intermovie.presentation.ui.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
