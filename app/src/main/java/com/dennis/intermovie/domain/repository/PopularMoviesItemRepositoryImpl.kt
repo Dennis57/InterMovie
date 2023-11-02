@@ -11,8 +11,9 @@ import com.dennis.intermovie.domain.model.PopularMoviesItem
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import java.io.IOException
+import javax.inject.Inject
 
-class PopularMoviesItemRepositoryImpl constructor(
+class PopularMoviesItemRepositoryImpl @Inject constructor(
     private val interMovieApiService: InterMovieApiService,
     private val popularMoviesDao: PopularMoviesDao,
     private val popularMoviesItemDao: PopularMoviesItemDao
